@@ -8,7 +8,7 @@
 
 // -------------FUNCTIONS------------
 function numberRandom(min,max){
-    return number = Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min) + min);
 }
 function isInArray(element, array){
     for(var i=0; i< array.length;i++){
@@ -23,7 +23,7 @@ function isInArray(element, array){
 var minInterval = 1;
 var maxInterval;
 do{
-var level = parseInt(prompt("Inserisci il livello difficoltà del gioco\n 0, 1 o 2"));
+    var level = parseInt(prompt("Inserisci il livello difficoltà del gioco\n 0, 1 o 2"));
 }while(isNaN(level) || level < 0 || level > 2);
 
 switch (level){
